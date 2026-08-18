@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>H  A  H  A  H  A</title>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+  </style>
 </head>
 <body>
   <form action="show.html" method="post">
@@ -31,5 +37,21 @@
     <br><br>
     <input type="submit" value="Submit">
   </form>
+
+  <div id="output"></div>
+
+  <script>
+    //console.log("aku nak limo");
+
+    //alert("aku nak limo");
+
+    //document.write("<h1>AKU NAK BANYAK</h1>");
+
+    let itemselected = document.getElementById("output");
+    console.log(itemselected);
+
+    itemselected.innerHTML = "<h1>AKU NAK BANYAK</h1>";
+    itemselected.classList.add("blue");
+  </script>
 </body>
 </html>
